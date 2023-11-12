@@ -22,7 +22,7 @@ a:hover {
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 ul,
@@ -66,7 +66,7 @@ body {
   background: var(--primary-color);
 }
 
-/* ====== Custom CSS ====== */
+/* ====== Text And Button ====== */
 
 h1 {
   font-size: 3rem;
@@ -82,4 +82,139 @@ h2 {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   line-height: 3rem;
+}
+
+h4 {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.56rem;
+  background-color: var(--primary-color);
+  border: 0.187rem solid var(--primary-color);
+  border-radius: 6px;
+  color: var(--white-color);
+  font-size: 0.937rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.white-btn {
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--white-color);
+  border: 0.187rem solid var(--white-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  font-size: 0.937rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.warpper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+  color: var(--white-color);
+}
+
+/* ====== Header Design ====== */
+.navigation-warp {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navigation-warp .nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+
+.navigation-warp .main-btn {
+  padding: 0.312rem 1.43rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.937rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+/* ====== Navbar Styling On Scroll ====== */
+.navigation-warp .scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+  transition: all 0.15s ease-in-out 0s;
 }
