@@ -2,9 +2,35 @@
 }
 
 @media (max-width: 991px) {
+  .text-content {
+    width: 100%;
+  }
+  .navigation-warp {
+    text-align: center;
+    background-color: var(--white-color);
+  }
+  .navigation-warp .navbar-brand img {
+    height: 3.812rem;
+  }
+  .navigation-warp .nav-link {
+    line-height: 1.875rem;
+  }
+  .top-banner {
+    padding: 9.375rem 0 9.375rem;
+  }
 }
 
 @media (max-width: 767px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.062rem;
+  }
+  .top-banner {
+    padding: 10.875rem 0 9.375rem;
+  }
 }
 
 @media (max-width: 330px) {
